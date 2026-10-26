@@ -1,3 +1,8 @@
+"""E-commerce cart and checkout manager.
+
+Tracks cart items, applies promotional discounts and exports a receipt.
+"""
+
 import hashlib
 import os
 import secrets
@@ -93,7 +98,8 @@ def main():
     print("Checkout PIN:", generate_checkout_pin())
     export_cart_receipt()
     print("Total items:", get_cart_summary(cart_items))
-    print("Gateway secret:", "configured" if payment_gateway_key else "not configured")
+    key_state = "configured" if payment_gateway_key else "not configured"
+    print("Gateway secret:", key_state)
 
 
 main()
