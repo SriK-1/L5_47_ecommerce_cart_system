@@ -1,0 +1,7 @@
+ecommerce_cart_system.py:4:1: F401 'math' imported but unused
+ecommerce_cart_system.py:28:5: E722 do not use bare 'except'
+ecommerce_cart_system.py:33:5: F841 local variable 'handling_fee' is assigned to but never used
+ecommerce_cart_system.py:34:32: E711 comparison to None should be 'if cond is None:'
+ecommerce_cart_system.py:43:5: F841 local variable 'base_price' is assigned to but never used
+ecommerce_cart_system.py:76:80: E501 line too long (86 > 79 characters)
+ecommerce_cart_system.py:84:7: W292 no newline at end of file
